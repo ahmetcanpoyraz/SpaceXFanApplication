@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B246DB8281EF86A002ACFC8 /* SpaceXFanApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B246DB7281EF86A002ACFC8 /* SpaceXFanApplicationApp.swift */; };
-		9B246DBA281EF86A002ACFC8 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B246DB9281EF86A002ACFC8 /* AuthView.swift */; };
+		9B246DBA281EF86A002ACFC8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B246DB9281EF86A002ACFC8 /* LoginView.swift */; };
 		9B246DBC281EF86B002ACFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B246DBB281EF86B002ACFC8 /* Assets.xcassets */; };
 		9B246DBF281EF86B002ACFC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B246DBE281EF86B002ACFC8 /* Preview Assets.xcassets */; };
 		9B246DC7281EF96B002ACFC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B246DC6281EF96B002ACFC8 /* GoogleService-Info.plist */; };
@@ -23,20 +23,28 @@
 		9B246DDA281EFB06002ACFC8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B246DD9281EFB06002ACFC8 /* FirebaseStorage */; };
 		9B246DDC281EFB06002ACFC8 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 9B246DDB281EFB06002ACFC8 /* FirebaseStorageSwift-Beta */; };
 		9B246DDE282045CD002ACFC8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B246DDD282045CD002ACFC8 /* SplashView.swift */; };
+		9BAE6CDB282ADFC800EFE385 /* StepperView in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAE6CDA282ADFC800EFE385 /* StepperView */; };
+		9BAE6CE2282B1B4D00EFE385 /* BottomNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE6CE1282B1B4D00EFE385 /* BottomNavigationBarView.swift */; };
 		9BD0ABF62829991800BDD06C /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0ABF52829991800BDD06C /* SplashViewModel.swift */; };
-		9BD0ABFA2829994200BDD06C /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0ABF92829994200BDD06C /* AuthViewModel.swift */; };
+		9BD0ABFA2829994200BDD06C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0ABF92829994200BDD06C /* LoginViewModel.swift */; };
+		9BD0ABFE2829A5A500BDD06C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0ABFD2829A5A500BDD06C /* RegisterView.swift */; };
+		9BD0AC002829A5B300BDD06C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0ABFF2829A5B300BDD06C /* RegisterViewModel.swift */; };
+		9BD0AC032829C07500BDD06C /* SwiftUINavigationBarColor in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD0AC022829C07500BDD06C /* SwiftUINavigationBarColor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B246DB4281EF86A002ACFC8 /* SpaceXFanApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXFanApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B246DB7281EF86A002ACFC8 /* SpaceXFanApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXFanApplicationApp.swift; sourceTree = "<group>"; };
-		9B246DB9281EF86A002ACFC8 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		9B246DB9281EF86A002ACFC8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9B246DBB281EF86B002ACFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B246DBE281EF86B002ACFC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B246DC6281EF96B002ACFC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B246DDD282045CD002ACFC8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		9BAE6CE1282B1B4D00EFE385 /* BottomNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBarView.swift; sourceTree = "<group>"; };
 		9BD0ABF52829991800BDD06C /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		9BD0ABF92829994200BDD06C /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		9BD0ABF92829994200BDD06C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9BD0ABFD2829A5A500BDD06C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9BD0ABFF2829A5B300BDD06C /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B246DD2281EFB06002ACFC8 /* FirebaseDatabase in Frameworks */,
+				9BD0AC032829C07500BDD06C /* SwiftUINavigationBarColor in Frameworks */,
 				9B246DCC281EFB06002ACFC8 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				9B246DDA281EFB06002ACFC8 /* FirebaseStorage in Frameworks */,
 				9B246DD6281EFB06002ACFC8 /* FirebaseFirestoreSwift-Beta in Frameworks */,
@@ -52,6 +61,7 @@
 				9B246DDC281EFB06002ACFC8 /* FirebaseStorageSwift-Beta in Frameworks */,
 				9B246DD0281EFB06002ACFC8 /* FirebaseCrashlytics in Frameworks */,
 				9B246DCE281EFB06002ACFC8 /* FirebaseAuth in Frameworks */,
+				9BAE6CDB282ADFC800EFE385 /* StepperView in Frameworks */,
 				9B246DCA281EFB06002ACFC8 /* FirebaseAnalytics in Frameworks */,
 				9B246DD4281EFB06002ACFC8 /* FirebaseFirestore in Frameworks */,
 			);
@@ -101,6 +111,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9BAE6CE0282B1B2300EFE385 /* bottom_navigation_bar */ = {
+			isa = PBXGroup;
+			children = (
+				9BAE6CE1282B1B4D00EFE385 /* BottomNavigationBarView.swift */,
+			);
+			path = bottom_navigation_bar;
+			sourceTree = "<group>";
+		};
 		9BD0ABE92829981B00BDD06C /* init */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +159,7 @@
 		9BD0ABEF2829985A00BDD06C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				9BAE6CE0282B1B2300EFE385 /* bottom_navigation_bar */,
 				9BD0ABF72829992700BDD06C /* auth */,
 				9BD0ABF3282998D300BDD06C /* splash */,
 			);
@@ -173,10 +192,28 @@
 		9BD0ABF72829992700BDD06C /* auth */ = {
 			isa = PBXGroup;
 			children = (
-				9B246DB9281EF86A002ACFC8 /* AuthView.swift */,
-				9BD0ABF92829994200BDD06C /* AuthViewModel.swift */,
+				9BD0ABFC2829A4EB00BDD06C /* register */,
+				9BD0ABFB2829A4DC00BDD06C /* login */,
 			);
 			path = auth;
+			sourceTree = "<group>";
+		};
+		9BD0ABFB2829A4DC00BDD06C /* login */ = {
+			isa = PBXGroup;
+			children = (
+				9BD0ABF92829994200BDD06C /* LoginViewModel.swift */,
+				9B246DB9281EF86A002ACFC8 /* LoginView.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		9BD0ABFC2829A4EB00BDD06C /* register */ = {
+			isa = PBXGroup;
+			children = (
+				9BD0ABFD2829A5A500BDD06C /* RegisterView.swift */,
+				9BD0ABFF2829A5B300BDD06C /* RegisterViewModel.swift */,
+			);
+			path = register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +243,8 @@
 				9B246DD7281EFB06002ACFC8 /* FirebaseFunctions */,
 				9B246DD9281EFB06002ACFC8 /* FirebaseStorage */,
 				9B246DDB281EFB06002ACFC8 /* FirebaseStorageSwift-Beta */,
+				9BD0AC022829C07500BDD06C /* SwiftUINavigationBarColor */,
+				9BAE6CDA282ADFC800EFE385 /* StepperView */,
 			);
 			productName = SpaceXFanApplication;
 			productReference = 9B246DB4281EF86A002ACFC8 /* SpaceXFanApplication.app */;
@@ -238,6 +277,8 @@
 			packageReferences = (
 				9B246DC5281EF8FF002ACFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9B246DC8281EFB06002ACFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9BD0AC012829C07500BDD06C /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Bar-Color" */,
+				9BAE6CD9282ADFC800EFE385 /* XCRemoteSwiftPackageReference "StepperView" */,
 			);
 			productRefGroup = 9B246DB5281EF86A002ACFC8 /* Products */;
 			projectDirPath = "";
@@ -266,9 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BD0ABFA2829994200BDD06C /* AuthViewModel.swift in Sources */,
-				9B246DBA281EF86A002ACFC8 /* AuthView.swift in Sources */,
+				9BD0ABFA2829994200BDD06C /* LoginViewModel.swift in Sources */,
+				9B246DBA281EF86A002ACFC8 /* LoginView.swift in Sources */,
+				9BD0AC002829A5B300BDD06C /* RegisterViewModel.swift in Sources */,
 				9B246DDE282045CD002ACFC8 /* SplashView.swift in Sources */,
+				9BD0ABFE2829A5A500BDD06C /* RegisterView.swift in Sources */,
+				9BAE6CE2282B1B4D00EFE385 /* BottomNavigationBarView.swift in Sources */,
 				9B246DB8281EF86A002ACFC8 /* SpaceXFanApplicationApp.swift in Sources */,
 				9BD0ABF62829991800BDD06C /* SplashViewModel.swift in Sources */,
 			);
@@ -491,6 +535,22 @@
 				version = 8.0.0;
 			};
 		};
+		9BAE6CD9282ADFC800EFE385 /* XCRemoteSwiftPackageReference "StepperView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/badrinathvm/StepperView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		9BD0AC012829C07500BDD06C /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Bar-Color" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/haifengkao/SwiftUI-Navigation-Bar-Color";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -543,6 +603,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B246DC5281EF8FF002ACFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageSwift-Beta";
+		};
+		9BAE6CDA282ADFC800EFE385 /* StepperView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BAE6CD9282ADFC800EFE385 /* XCRemoteSwiftPackageReference "StepperView" */;
+			productName = StepperView;
+		};
+		9BD0AC022829C07500BDD06C /* SwiftUINavigationBarColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BD0AC012829C07500BDD06C /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Bar-Color" */;
+			productName = SwiftUINavigationBarColor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

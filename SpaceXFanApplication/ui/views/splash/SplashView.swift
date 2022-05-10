@@ -14,13 +14,13 @@ struct SplashView: View {
     var body: some View {
         VStack {
             if viewModel.isActive {
-                AuthView()
+                LoginView()
             } else {
                 Image("space-x-i-os-splash-screen-bg").resizable().edgesIgnoringSafeArea(.all)
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 withAnimation {
                     viewModel.isActive = true
                 }

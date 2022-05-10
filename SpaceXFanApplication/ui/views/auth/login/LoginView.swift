@@ -6,27 +6,29 @@
 //
 
 import SwiftUI
-import Firebase
+import SwiftUINavigationBarColor
 
-struct AuthView: View {
+struct LoginView: View {
     
-    
-    let db = Firestore.firestore()
+    @StateObject var viewModel = LoginViewModel()
     @State var userEmail = ""
     @State var userPassword = ""
-    @State var showAuthView = true
+    @State var selection: Int? = nil
+    @State var isShowingDetailView = false
     
-    
+    init() {
+            //Use this if NavigationBarTitle is with Large Font
+            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
+
+            //Use this if NavigationBarTitle is with displayMode = .inline
+            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.red]
+        }
     var body: some View {
-        
+    
         NavigationView{
             
-            if showAuthView{
-                
-           
-        
+            if viewModel.showAuthView{
         ZStack {
-            
             
                         Image("loginBackground")
                 .resizable()
@@ -50,48 +52,59 @@ struct AuthView: View {
                     }){
                         Text("Forgot Password").foregroundColor(.white)
                     }
+                    
                     Spacer()
+                    
                 }.padding()
                 
-            
-        
+                VStack {
+                                NavigationLink(destination: BottomNavigationBarView()) {
+                                    Text("Show Detail View")
+                                }
+                                .navigationTitle("Navigation")
+                            }
                 
                 HStack{
                     Button(action: {
-                        
-                        Auth.auth().signIn(withEmail: self.userEmail, password: self.userPassword){
-                            (result,error) in
-                            if error != nil {
-                                print(error?.localizedDescription)
-                            }else{
-                               
-                            }
-                        }
-                        
+                        viewModel.signIn(withEmail: self.userEmail, password: self.userPassword)
                     }){
                         Text("Login").foregroundColor(.white)
                     }.padding().frame(width: UIScreen.main.bounds.width * 0.5)
-                   
                 }.background(Color.gray).cornerRadius(35)
                     .padding()
-                
-                
                 Text("Or").foregroundColor(.white)
-                            
                 HStack{
                     Button(action: {
-                        
                     }){
                         Text("Sign in with Apple").foregroundColor(.white)
                     }.padding().frame(width: UIScreen.main.bounds.width * 0.5)
-                   
                 }.background(Color.gray).cornerRadius(35)
                     .padding()
-                            
                 
-                HStack{
+                
+                
+                
+                           VStack {
+                            
+                               NavigationLink(destination: RegisterView(),
+                                              isActive: $isShowingDetailView) {
+                                   Button(action: {
+                                       self.isShowingDetailView = true
+                                   }) {
+                                       Text("Sign Up").foregroundColor(.white)
+                                   }.padding().frame(width: UIScreen.main.bounds.width * 0.5)
+                               }.navigationBarHidden(true).navigationTitle(Text(""))
+                               
+                           }
+                      
+                       
+                
+               
+                           
+                /*HStack{
                     Button(action: {
-                        Auth.auth().createUser(withEmail: self.userEmail, password: self.userPassword){
+                       
+                      /*  Auth.auth().createUser(withEmail: self.userEmail, password: self.userPassword){
                             (result,error) in if error != nil{
                                 print(error?.localizedDescription)
                             }else{
@@ -107,17 +120,17 @@ struct AuthView: View {
                                 
                                 self.showAuthView = false
                             }
-                        }
+                        }*/
                     }){
                         Text("Sign Up").foregroundColor(.white)
                     }.padding().frame(width: UIScreen.main.bounds.width * 0.5)
                    
-                }
+                }*/
                 
                 
                         
         }
-    }.edgesIgnoringSafeArea(.all)
+    }.edgesIgnoringSafeArea(.all).navigationTransparentBar(tintColor: .white)
             }else{
                 NavigationView{
                     Text("sada")
@@ -129,7 +142,7 @@ struct AuthView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView().previewDevice("iPhone 11")
+        LoginView().previewDevice("iPhone 11")
     }
 }
 }
