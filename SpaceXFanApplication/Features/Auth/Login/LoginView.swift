@@ -10,6 +10,8 @@ import SwiftUINavigationBarColor
 
 struct LoginView: View {
     
+    @State var isLinkActive = false
+    
     @StateObject var viewModel = LoginViewModel()
     @State var userEmail = ""
     @State var userPassword = ""
@@ -22,6 +24,19 @@ struct LoginView: View {
 
             //Use this if NavigationBarTitle is with displayMode = .inline
             UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.red]
+      /*  print(111111)
+        print(111111)
+        print(111111)
+        let url = URL(string: "https://api.spacexdata.com/v3/rockets")!
+        WebServices().downloadRockets(url: url){ (rockets) in
+            if let rockets = rockets {
+                print(111111)
+                print(rockets)
+                print(22222)
+            }
+        }*/
+        
+        
         }
     var body: some View {
     
@@ -58,11 +73,21 @@ struct LoginView: View {
                 }.padding()
                 
                 VStack {
-                                NavigationLink(destination: BottomNavigationBarView()) {
-                                    Text("Show Detail View")
+                                
+                                Button(action: {
+                                    self.isLinkActive = true
+                                }) {
+                                    Text("Login")
                                 }
-                                .navigationTitle("Navigation")
                             }
+                            .navigationBarTitle(Text("Login"))
+                            .navigationBarHidden(true)
+                            .background(
+                                NavigationLink(destination: AppTabBarView(), isActive: $isLinkActive) {
+                                    EmptyView()
+                                }.navigationBarBackButtonHidden(true)
+                                
+                            )
                 
                 HStack{
                     Button(action: {
