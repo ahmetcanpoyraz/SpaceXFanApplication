@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Rocket: Identifiable, Decodable {
+    var id: String
+    var name: String
+    var description: String
+    var flickr_images: [String]
+}

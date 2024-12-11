@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3727FA2D08691F00D741CA /* RocketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3727F92D08691F00D741CA /* RocketsViewModel.swift */; };
 		EB9387E52D07332800C077AF /* SpaceXFanApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387E42D07332800C077AF /* SpaceXFanApplicationApp.swift */; };
-		EB9387E72D07332800C077AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387E62D07332800C077AF /* ContentView.swift */; };
 		EB9387E92D07332900C077AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9387E82D07332900C077AF /* Assets.xcassets */; };
 		EB9387EC2D07332900C077AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9387EB2D07332900C077AF /* Preview Assets.xcassets */; };
 		EB9387EE2D07332900C077AF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387ED2D07332900C077AF /* Persistence.swift */; };
@@ -16,6 +16,25 @@
 		EB9387FB2D07332A00C077AF /* SpaceXFanApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9387FA2D07332A00C077AF /* SpaceXFanApplicationTests.swift */; };
 		EB9388052D07332A00C077AF /* SpaceXFanApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388042D07332A00C077AF /* SpaceXFanApplicationUITests.swift */; };
 		EB9388072D07332A00C077AF /* SpaceXFanApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388062D07332A00C077AF /* SpaceXFanApplicationUITestsLaunchTests.swift */; };
+		EB9388192D082CDB00C077AF /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388182D082CDB00C077AF /* Rocket.swift */; };
+		EB93881B2D082CE600C077AF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93881A2D082CE600C077AF /* User.swift */; };
+		EB93881D2D082CFD00C077AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93881C2D082CFD00C077AF /* HomeView.swift */; };
+		EB93881F2D082D0A00C077AF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93881E2D082D0A00C077AF /* LoginView.swift */; };
+		EB9388212D082D1600C077AF /* RocketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388202D082D1600C077AF /* RocketDetail.swift */; };
+		EB9388242D082D2B00C077AF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388232D082D2B00C077AF /* CustomButton.swift */; };
+		EB9388262D082D4A00C077AF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388252D082D4A00C077AF /* NetworkService.swift */; };
+		EB9388292D082D6100C077AF /* SpaceXAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388282D082D6100C077AF /* SpaceXAPI.swift */; };
+		EB93882B2D082D6D00C077AF /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93882A2D082D6D00C077AF /* APIConstants.swift */; };
+		EB93882F2D082DD400C077AF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93882E2D082DD400C077AF /* LoginViewModel.swift */; };
+		EB9388312D082DDC00C077AF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388302D082DDC00C077AF /* HomeViewModel.swift */; };
+		EB9388332D082DEC00C077AF /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388322D082DEC00C077AF /* DetailViewModel.swift */; };
+		EB9388352D082E4F00C077AF /* FavouritiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388342D082E4F00C077AF /* FavouritiesViewModel.swift */; };
+		EB9388372D082E5F00C077AF /* FavouritiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388362D082E5F00C077AF /* FavouritiesView.swift */; };
+		EB9388392D082E6B00C077AF /* UpcomingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388382D082E6B00C077AF /* UpcomingsView.swift */; };
+		EB93883B2D082E7600C077AF /* UpcomingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93883A2D082E7600C077AF /* UpcomingsViewModel.swift */; };
+		EB93883F2D08358800C077AF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93883E2D08358800C077AF /* BackgroundView.swift */; };
+		EB9388412D08391100C077AF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388402D08391100C077AF /* CustomTextField.swift */; };
+		EB9388432D08641F00C077AF /* RocketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388422D08641F00C077AF /* RocketsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB3727F92D08691F00D741CA /* RocketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewModel.swift; sourceTree = "<group>"; };
 		EB9387E12D07332800C077AF /* SpaceXFanApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXFanApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9387E42D07332800C077AF /* SpaceXFanApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXFanApplicationApp.swift; sourceTree = "<group>"; };
-		EB9387E62D07332800C077AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB9387E82D07332900C077AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9387EB2D07332900C077AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB9387ED2D07332900C077AF /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +67,25 @@
 		EB9388002D07332A00C077AF /* SpaceXFanApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXFanApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9388042D07332A00C077AF /* SpaceXFanApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXFanApplicationUITests.swift; sourceTree = "<group>"; };
 		EB9388062D07332A00C077AF /* SpaceXFanApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXFanApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB9388182D082CDB00C077AF /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		EB93881A2D082CE600C077AF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB93881C2D082CFD00C077AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB93881E2D082D0A00C077AF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EB9388202D082D1600C077AF /* RocketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetail.swift; sourceTree = "<group>"; };
+		EB9388232D082D2B00C077AF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		EB9388252D082D4A00C077AF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EB9388282D082D6100C077AF /* SpaceXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPI.swift; sourceTree = "<group>"; };
+		EB93882A2D082D6D00C077AF /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		EB93882E2D082DD400C077AF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EB9388302D082DDC00C077AF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EB9388322D082DEC00C077AF /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		EB9388342D082E4F00C077AF /* FavouritiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritiesViewModel.swift; sourceTree = "<group>"; };
+		EB9388362D082E5F00C077AF /* FavouritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritiesView.swift; sourceTree = "<group>"; };
+		EB9388382D082E6B00C077AF /* UpcomingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsView.swift; sourceTree = "<group>"; };
+		EB93883A2D082E7600C077AF /* UpcomingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingsViewModel.swift; sourceTree = "<group>"; };
+		EB93883E2D08358800C077AF /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		EB9388402D08391100C077AF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EB9388422D08641F00C077AF /* RocketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +136,13 @@
 		EB9387E32D07332800C077AF /* SpaceXFanApplication */ = {
 			isa = PBXGroup;
 			children = (
-				EB9387E42D07332800C077AF /* SpaceXFanApplicationApp.swift */,
-				EB9387E62D07332800C077AF /* ContentView.swift */,
-				EB9387E82D07332900C077AF /* Assets.xcassets */,
-				EB9387ED2D07332900C077AF /* Persistence.swift */,
+				EB93883D2D08336E00C077AF /* Resources */,
+				EB93883C2D08336600C077AF /* App */,
+				EB9388172D082CB900C077AF /* Utilities */,
+				EB9388162D082CB200C077AF /* Service */,
+				EB9388152D082CAB00C077AF /* ViewModel */,
+				EB9388142D082CA700C077AF /* View */,
+				EB9388132D082C9700C077AF /* Model */,
 				EB9387EF2D07332900C077AF /* SpaceXFanApplication.xcdatamodeld */,
 				EB9387EA2D07332900C077AF /* Preview Content */,
 			);
@@ -131,6 +172,110 @@
 				EB9388062D07332A00C077AF /* SpaceXFanApplicationUITestsLaunchTests.swift */,
 			);
 			path = SpaceXFanApplicationUITests;
+			sourceTree = "<group>";
+		};
+		EB9388132D082C9700C077AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB9388182D082CDB00C077AF /* Rocket.swift */,
+				EB93881A2D082CE600C077AF /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB9388142D082CA700C077AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9388222D082D1900C077AF /* Shared */,
+				EB93881C2D082CFD00C077AF /* HomeView.swift */,
+				EB93881E2D082D0A00C077AF /* LoginView.swift */,
+				EB9388202D082D1600C077AF /* RocketDetail.swift */,
+				EB9388362D082E5F00C077AF /* FavouritiesView.swift */,
+				EB9388382D082E6B00C077AF /* UpcomingsView.swift */,
+				EB9388422D08641F00C077AF /* RocketsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB9388152D082CAB00C077AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB93882E2D082DD400C077AF /* LoginViewModel.swift */,
+				EB9388302D082DDC00C077AF /* HomeViewModel.swift */,
+				EB9388322D082DEC00C077AF /* DetailViewModel.swift */,
+				EB9388342D082E4F00C077AF /* FavouritiesViewModel.swift */,
+				EB93883A2D082E7600C077AF /* UpcomingsViewModel.swift */,
+				EB3727F92D08691F00D741CA /* RocketsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB9388162D082CB200C077AF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EB9388272D082D5000C077AF /* API */,
+				EB9388252D082D4A00C077AF /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EB9388172D082CB900C077AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EB93882D2D082D8B00C077AF /* Helpers */,
+				EB93882C2D082D8300C077AF /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EB9388222D082D1900C077AF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EB9388232D082D2B00C077AF /* CustomButton.swift */,
+				EB93883E2D08358800C077AF /* BackgroundView.swift */,
+				EB9388402D08391100C077AF /* CustomTextField.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EB9388272D082D5000C077AF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EB9388282D082D6100C077AF /* SpaceXAPI.swift */,
+				EB93882A2D082D6D00C077AF /* APIConstants.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EB93882C2D082D8300C077AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB93882D2D082D8B00C077AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EB93883C2D08336600C077AF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387E42D07332800C077AF /* SpaceXFanApplicationApp.swift */,
+				EB9387ED2D07332900C077AF /* Persistence.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EB93883D2D08336E00C077AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB9387E82D07332900C077AF /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +408,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9388392D082E6B00C077AF /* UpcomingsView.swift in Sources */,
+				EB9388262D082D4A00C077AF /* NetworkService.swift in Sources */,
+				EB3727FA2D08691F00D741CA /* RocketsViewModel.swift in Sources */,
 				EB9387EE2D07332900C077AF /* Persistence.swift in Sources */,
-				EB9387E72D07332800C077AF /* ContentView.swift in Sources */,
+				EB9388352D082E4F00C077AF /* FavouritiesViewModel.swift in Sources */,
+				EB93883B2D082E7600C077AF /* UpcomingsViewModel.swift in Sources */,
+				EB93882B2D082D6D00C077AF /* APIConstants.swift in Sources */,
+				EB93881D2D082CFD00C077AF /* HomeView.swift in Sources */,
+				EB9388292D082D6100C077AF /* SpaceXAPI.swift in Sources */,
+				EB93882F2D082DD400C077AF /* LoginViewModel.swift in Sources */,
+				EB93881B2D082CE600C077AF /* User.swift in Sources */,
+				EB93883F2D08358800C077AF /* BackgroundView.swift in Sources */,
+				EB9388242D082D2B00C077AF /* CustomButton.swift in Sources */,
 				EB9387F12D07332900C077AF /* SpaceXFanApplication.xcdatamodeld in Sources */,
+				EB9388192D082CDB00C077AF /* Rocket.swift in Sources */,
+				EB9388432D08641F00C077AF /* RocketsView.swift in Sources */,
+				EB9388412D08391100C077AF /* CustomTextField.swift in Sources */,
+				EB93881F2D082D0A00C077AF /* LoginView.swift in Sources */,
 				EB9387E52D07332800C077AF /* SpaceXFanApplicationApp.swift in Sources */,
+				EB9388372D082E5F00C077AF /* FavouritiesView.swift in Sources */,
+				EB9388312D082DDC00C077AF /* HomeViewModel.swift in Sources */,
+				EB9388212D082D1600C077AF /* RocketDetail.swift in Sources */,
+				EB9388332D082DEC00C077AF /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

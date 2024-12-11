@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+import Foundation
+
+class LoginViewModel: ObservableObject {
+   
+}
