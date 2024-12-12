@@ -10,14 +10,19 @@ import SwiftUI
 
 struct CustomTextField: View {
     var placeholder: String
+    var systemName : String
+    var isPassword : Bool
     @Binding var text: String
 
     var body: some View {
         HStack {
-                Image(systemName: "person")
-                       .foregroundColor(.gray)
-                   TextField(placeholder, text: $text)
-                 
+            if isPassword {
+                SecureField (placeholder,text: $text).keyboardType(.default).textContentType(.password).foregroundColor(.black)
+             } else {
+                 TextField(placeholder, text: $text).foregroundColor(.black)
+             }
+            Image(systemName: systemName)
+                   .foregroundColor(.gray)
                }
         .padding()
                .background(Color.white)
