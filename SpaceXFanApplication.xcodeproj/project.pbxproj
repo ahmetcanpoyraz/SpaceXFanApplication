@@ -36,8 +36,6 @@
 		EB93881F2D082D0A00C077AF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93881E2D082D0A00C077AF /* LoginView.swift */; };
 		EB9388212D082D1600C077AF /* RocketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388202D082D1600C077AF /* RocketDetail.swift */; };
 		EB9388242D082D2B00C077AF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388232D082D2B00C077AF /* CustomButton.swift */; };
-		EB9388262D082D4A00C077AF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388252D082D4A00C077AF /* NetworkService.swift */; };
-		EB9388292D082D6100C077AF /* SpaceXAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388282D082D6100C077AF /* SpaceXAPI.swift */; };
 		EB93882B2D082D6D00C077AF /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93882A2D082D6D00C077AF /* APIConstants.swift */; };
 		EB93882F2D082DD400C077AF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93882E2D082DD400C077AF /* LoginViewModel.swift */; };
 		EB9388312D082DDC00C077AF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388302D082DDC00C077AF /* HomeViewModel.swift */; };
@@ -49,6 +47,7 @@
 		EB93883F2D08358800C077AF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93883E2D08358800C077AF /* BackgroundView.swift */; };
 		EB9388412D08391100C077AF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388402D08391100C077AF /* CustomTextField.swift */; };
 		EB9388432D08641F00C077AF /* RocketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388422D08641F00C077AF /* RocketsView.swift */; };
+		EBC9B2702D0AF2150017639C /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9B26F2D0AF2150017639C /* RocketService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +88,6 @@
 		EB93881E2D082D0A00C077AF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB9388202D082D1600C077AF /* RocketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetail.swift; sourceTree = "<group>"; };
 		EB9388232D082D2B00C077AF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		EB9388252D082D4A00C077AF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		EB9388282D082D6100C077AF /* SpaceXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPI.swift; sourceTree = "<group>"; };
 		EB93882A2D082D6D00C077AF /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EB93882E2D082DD400C077AF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EB9388302D082DDC00C077AF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +99,7 @@
 		EB93883E2D08358800C077AF /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		EB9388402D08391100C077AF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		EB9388422D08641F00C077AF /* RocketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsView.swift; sourceTree = "<group>"; };
+		EBC9B26F2D0AF2150017639C /* RocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				EB9388272D082D5000C077AF /* API */,
-				EB9388252D082D4A00C077AF /* NetworkService.swift */,
 				EB3728192D09B1DE00D741CA /* FirebaseService.swift */,
 			);
 			path = Service;
@@ -271,8 +268,8 @@
 		EB9388272D082D5000C077AF /* API */ = {
 			isa = PBXGroup;
 			children = (
-				EB9388282D082D6100C077AF /* SpaceXAPI.swift */,
 				EB93882A2D082D6D00C077AF /* APIConstants.swift */,
+				EBC9B26F2D0AF2150017639C /* RocketService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -458,14 +455,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9388392D082E6B00C077AF /* UpcomingsView.swift in Sources */,
-				EB9388262D082D4A00C077AF /* NetworkService.swift in Sources */,
 				EB3727FA2D08691F00D741CA /* RocketsViewModel.swift in Sources */,
 				EB9387EE2D07332900C077AF /* Persistence.swift in Sources */,
 				EB9388352D082E4F00C077AF /* FavouritiesViewModel.swift in Sources */,
 				EB93883B2D082E7600C077AF /* UpcomingsViewModel.swift in Sources */,
 				EB93882B2D082D6D00C077AF /* APIConstants.swift in Sources */,
 				EB93881D2D082CFD00C077AF /* HomeView.swift in Sources */,
-				EB9388292D082D6100C077AF /* SpaceXAPI.swift in Sources */,
 				EB93882F2D082DD400C077AF /* LoginViewModel.swift in Sources */,
 				EB37281A2D09B1DE00D741CA /* FirebaseService.swift in Sources */,
 				EB93881B2D082CE600C077AF /* User.swift in Sources */,
@@ -481,6 +476,7 @@
 				EB9388312D082DDC00C077AF /* HomeViewModel.swift in Sources */,
 				EB9388212D082D1600C077AF /* RocketDetail.swift in Sources */,
 				EB9388332D082DEC00C077AF /* DetailViewModel.swift in Sources */,
+				EBC9B2702D0AF2150017639C /* RocketService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

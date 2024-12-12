@@ -8,10 +8,35 @@
 import Foundation
 
 class RocketsViewModel: ObservableObject {
-    @Published var rockets: [Rocket] = []
+    @Published var rockets: [RocketModel] = []
+    @Published var errorMessage: String? = nil
     @Published var isLoading = false
+    private var hasFetchedData = false // Veri kontrolü
 
+
+    private let rocketService = RocketService()
+    
+    init() {
+           fetchRockets() // İlk başlatmada veriyi çek
+       }
+
+    
     func fetchRockets() {
-        rockets = [Rocket(id: "11", name: "asd", description: "asdasd", flickr_images: ["asdasdasd"]),Rocket(id: "12", name: "asd", description: "asdasd", flickr_images: ["asdasdasd"])]
-    }
-}
+        guard !hasFetchedData else { return } // Daha önce veriler yüklendiyse çık
+           isLoading = true
+           errorMessage = nil
+           
+           rocketService.fetchRockets { [weak self] result in
+               DispatchQueue.main.async {
+                   self?.isLoading = false
+                   switch result {
+                   case .success(let rockets):
+                       self?.rockets = rockets
+                       self?.hasFetchedData = true // Veri başarıyla yüklendi
+                   case .failure(let error):
+                       self?.errorMessage = error.localizedDescription
+                   }
+               }
+           } 
+       }
+   }

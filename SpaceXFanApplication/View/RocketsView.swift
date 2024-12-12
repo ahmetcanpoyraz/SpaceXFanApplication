@@ -23,15 +23,15 @@ struct RocketsView: View {
                                                 .foregroundColor(.white)
                                                
                                             
-                                            if let url = URL(string: "https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg") {
+                                            if let url = URL(string: rocket.flickrImages.first ?? "") {
                                                 AsyncImage(url: url) { image in
                                                     image.resizable()
                                                         .scaledToFill()
-                                                        .frame(width: 150, height: 150)
+                                                        .frame(width: 170, height: 170)
                                                         .clipped()
                                                 } placeholder: {
                                                     ProgressView()
-                                                        .frame(width: 150, height: 150)
+                                                        .frame(width: 170, height: 170)
                                                 }
                                             }
                                         }
@@ -54,9 +54,6 @@ struct RocketsView: View {
                         }
                     }
                 }
-            }
-            .onAppear {
-                viewModel.fetchRockets()
             }
         }
     }
