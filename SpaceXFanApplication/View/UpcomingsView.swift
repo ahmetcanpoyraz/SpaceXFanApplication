@@ -24,9 +24,9 @@ struct UpcomingsView: View {
                         .font(.title3)
                     ScrollView {
                         VStack(spacing: 5) {
-                            ForEach(viewModel.rockets) { rocket in
+                            ForEach(viewModel.upcomingLaunches) { upcomingLaunches in
                                 VStack {
-                                    Text(rocket.name)
+                                    Text(upcomingLaunches.name)
                                         .font(.headline)
                                         .padding()
                                 
@@ -37,13 +37,8 @@ struct UpcomingsView: View {
                         }
                     }
                     .background(Color.clear)
-                    
                 }
-               
-               
             }
-        } .onAppear {
-            viewModel.fetchUpcomings() // View göründüğünde roketleri çekmeye başla
         }
     }
 }

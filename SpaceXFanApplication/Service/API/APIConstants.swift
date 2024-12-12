@@ -12,5 +12,8 @@ struct APIConstants{
         
     private init() {} // Singleton'ı dışarıdan başlatmayı engellemek için
     
-    private let baseURL = "https://api.spacexdata.com/v4/rockets"
+    let baseURL = "https://api.spacexdata.com/v4/"
+    let rockets = "rockets"
+    let upcomings = "launches/upcoming"
+
 }

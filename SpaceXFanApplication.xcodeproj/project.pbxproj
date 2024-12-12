@@ -31,7 +31,6 @@
 		EB9388052D07332A00C077AF /* SpaceXFanApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388042D07332A00C077AF /* SpaceXFanApplicationUITests.swift */; };
 		EB9388072D07332A00C077AF /* SpaceXFanApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388062D07332A00C077AF /* SpaceXFanApplicationUITestsLaunchTests.swift */; };
 		EB9388192D082CDB00C077AF /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388182D082CDB00C077AF /* Rocket.swift */; };
-		EB93881B2D082CE600C077AF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93881A2D082CE600C077AF /* User.swift */; };
 		EB93881D2D082CFD00C077AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93881C2D082CFD00C077AF /* HomeView.swift */; };
 		EB93881F2D082D0A00C077AF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93881E2D082D0A00C077AF /* LoginView.swift */; };
 		EB9388212D082D1600C077AF /* RocketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388202D082D1600C077AF /* RocketDetail.swift */; };
@@ -48,6 +47,7 @@
 		EB9388412D08391100C077AF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388402D08391100C077AF /* CustomTextField.swift */; };
 		EB9388432D08641F00C077AF /* RocketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9388422D08641F00C077AF /* RocketsView.swift */; };
 		EBC9B2702D0AF2150017639C /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9B26F2D0AF2150017639C /* RocketService.swift */; };
+		EBC9B2722D0B0FAD0017639C /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9B2712D0B0FAD0017639C /* Launch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 		EB9388042D07332A00C077AF /* SpaceXFanApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXFanApplicationUITests.swift; sourceTree = "<group>"; };
 		EB9388062D07332A00C077AF /* SpaceXFanApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXFanApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB9388182D082CDB00C077AF /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
-		EB93881A2D082CE600C077AF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EB93881C2D082CFD00C077AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB93881E2D082D0A00C077AF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB9388202D082D1600C077AF /* RocketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetail.swift; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		EB9388402D08391100C077AF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		EB9388422D08641F00C077AF /* RocketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsView.swift; sourceTree = "<group>"; };
 		EBC9B26F2D0AF2150017639C /* RocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketService.swift; sourceTree = "<group>"; };
+		EBC9B2712D0B0FAD0017639C /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				EB9388182D082CDB00C077AF /* Rocket.swift */,
-				EB93881A2D082CE600C077AF /* User.swift */,
+				EBC9B2712D0B0FAD0017639C /* Launch.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -463,7 +463,7 @@
 				EB93881D2D082CFD00C077AF /* HomeView.swift in Sources */,
 				EB93882F2D082DD400C077AF /* LoginViewModel.swift in Sources */,
 				EB37281A2D09B1DE00D741CA /* FirebaseService.swift in Sources */,
-				EB93881B2D082CE600C077AF /* User.swift in Sources */,
+				EBC9B2722D0B0FAD0017639C /* Launch.swift in Sources */,
 				EB93883F2D08358800C077AF /* BackgroundView.swift in Sources */,
 				EB9388242D082D2B00C077AF /* CustomButton.swift in Sources */,
 				EB9387F12D07332900C077AF /* SpaceXFanApplication.xcdatamodeld in Sources */,

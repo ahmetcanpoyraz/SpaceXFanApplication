@@ -14,7 +14,7 @@ class RocketsViewModel: ObservableObject {
     private var hasFetchedData = false // Veri kontrolü
 
 
-    private let rocketService = RocketService()
+    private let spaceXService = SpaceXService()
     
     init() {
            fetchRockets() // İlk başlatmada veriyi çek
@@ -26,7 +26,7 @@ class RocketsViewModel: ObservableObject {
            isLoading = true
            errorMessage = nil
            
-           rocketService.fetchRockets { [weak self] result in
+        spaceXService.fetchRockets { [weak self] result in
                DispatchQueue.main.async {
                    self?.isLoading = false
                    switch result {

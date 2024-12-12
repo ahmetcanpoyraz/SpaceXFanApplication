@@ -11,6 +11,6 @@ class FavouritesViewModel: ObservableObject {
     @Published var isLoading = false
 
     func fetchRockets() {
-      
+        print("")
     }
 }
