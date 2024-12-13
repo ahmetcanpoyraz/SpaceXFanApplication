@@ -7,17 +7,19 @@
 
 import Foundation
 import SwiftUI
-
+import SDWebImageSwiftUI
 
 struct RocketDetailView : View{
     let rocket: RocketModel
+    @ObservedObject var favouritesViewModel: FavouritesViewModel
+
 
        var body: some View {
            VStack {
              // Detaylar
                ZStack(alignment: .topTrailing){
                    if let url = URL(string: rocket.flickrImages.first ?? "") {
-                       AsyncImage(url: url) { image in
+                       WebImage(url: url) { image in
                            image.resizable()
                                .scaledToFit()
                                .clipped()
@@ -28,9 +30,9 @@ struct RocketDetailView : View{
                        }
                    }
                    Button(action: {
-                       print("Favorite button tapped for \(rocket.name)")
+                       favouritesViewModel.toggleFavorite(rocket: rocket)
                    }) {
-                       Image(systemName: "heart")
+                       Image(systemName: favouritesViewModel.rockets.contains(where: { $0.id == rocket.id }) ? "heart.fill" : "heart")
                            .resizable()
                            .frame(width: 30, height: 30)
                            .foregroundColor(.red)

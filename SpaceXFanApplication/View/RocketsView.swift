@@ -1,7 +1,9 @@
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct RocketsView: View {
     @StateObject private var viewModel = RocketsViewModel()
+    @EnvironmentObject var favouritesViewModel : FavouritesViewModel
 
     var body: some View {
         NavigationStack {
@@ -15,7 +17,7 @@ struct RocketsView: View {
                         VStack(spacing: 10) {
                             ForEach(viewModel.rockets) { rocket in
                                 HStack {
-                                    NavigationLink(destination: RocketDetailView(rocket: rocket)) {
+                                    NavigationLink(destination: RocketDetailView(rocket: rocket,favouritesViewModel: favouritesViewModel)) {
                                         VStack {
                                             Text(rocket.name)
                                                 .font(.headline)
@@ -24,7 +26,7 @@ struct RocketsView: View {
                                                
                                             
                                             if let url = URL(string: rocket.flickrImages.first ?? "") {
-                                                AsyncImage(url: url) { image in
+                                                WebImage(url: url) { image in
                                                     image.resizable()
                                                         .scaledToFill()
                                                         .frame(width: 170, height: 170)
@@ -41,9 +43,10 @@ struct RocketsView: View {
                                     Spacer()
                                     
                                     Button(action: {
-                                        print("Favorite button tapped for \(rocket.name)")
+                                        favouritesViewModel.toggleFavorite(rocket: rocket)
+
                                     }) {
-                                        Image(systemName: "heart")
+                                        Image(systemName: favouritesViewModel.rockets.contains(where: { $0.id == rocket.id }) ? "heart.fill" : "heart")
                                             .resizable()
                                             .frame(width: 30, height: 30)
                                             .foregroundColor(.red)

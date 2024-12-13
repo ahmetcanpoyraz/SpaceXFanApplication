@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var selectedTab = 0  // Seçili sekmeyi takip ediyoruz
+    @StateObject private var favouritesViewModel = FavouritesViewModel()
+    
 
     var body: some View {
         BackgroundView{
@@ -24,9 +26,9 @@ struct HomeView: View {
 
                         // Seçilen sekmeye göre içerikleri gösteriyoruz
                         if selectedTab == 0 {
-                            RocketsView()
+                            RocketsView().environmentObject(favouritesViewModel)
                         } else if selectedTab == 1 {
-                            FavouritiesView()
+                            FavouritiesView().environmentObject(favouritesViewModel)
                         } else {
                             UpcomingsView()
                         }

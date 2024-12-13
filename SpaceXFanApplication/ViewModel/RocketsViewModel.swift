@@ -13,7 +13,6 @@ class RocketsViewModel: ObservableObject {
     @Published var isLoading = false
     private var hasFetchedData = false // Veri kontrolü
 
-
     private let spaceXService = SpaceXService()
     
     init() {
